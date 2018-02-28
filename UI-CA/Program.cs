@@ -17,10 +17,6 @@ namespace SC.UI.CA
             quit = false;
             mgr = new TicketManager();
         }
-        static void Test() // static contructor for initialising static members!
-        {
-
-        }
 
         static void Main(string[] args)
         {
