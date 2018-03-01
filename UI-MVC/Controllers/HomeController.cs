@@ -27,7 +27,7 @@ namespace SC.UI.Web.MVC.Controllers
             return View();
         }
 
-        public ActionResult HubTest()
+        public ActionResult Chat()
         {
             return View();
         }

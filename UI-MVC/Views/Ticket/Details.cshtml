@@ -53,8 +53,9 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new {id=Model.TicketNumber}) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TicketNumber }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
 <h4>Responses</h4>
 @Html.Partial("_TicketResponsesPartial", Model.Responses)
+

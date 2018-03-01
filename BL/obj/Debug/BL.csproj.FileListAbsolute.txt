@@ -1,0 +1,14 @@
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\SC.BL.dll
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\SC.BL.pdb
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\SC.BL.Domain.dll
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\SC.DAL.dll
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\EntityFramework.dll
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\SC.DAL.pdb
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\SC.BL.Domain.pdb
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\EntityFramework.xml
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\obj\Debug\SC.BL.dll
+C:\Users\Maxim\Downloads\SupportCenter ISB204 - na EF\BL\obj\Debug\SC.BL.pdb

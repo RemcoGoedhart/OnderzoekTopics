@@ -12,14 +12,13 @@ namespace SC.UI.Web.MVC.Controllers
     public class TicketController : Controller
     {
         private ITicketManager mgr = new TicketManager();
+
         // GET: Ticket
         public ActionResult Index()
         {
             IEnumerable<Ticket> tickets = mgr.GetTickets();
             return View(tickets);
         }
-
-
 
         // GET: Ticket/Details/5
         public ActionResult Details(int id)
@@ -42,13 +41,15 @@ namespace SC.UI.Web.MVC.Controllers
             if (ModelState.IsValid)
             {
                 Ticket ticket = mgr.AddTicket(newTicket.AccId, newTicket.Problem);
+
                 return RedirectToAction("Details", new { id = ticket.TicketNumber });
             }
+
             return View();
         }
 
-
         // GET: Ticket/Edit/5
+
         public ActionResult Edit(int id)
         {
             Ticket ticket = mgr.GetTicket(id);
@@ -62,10 +63,12 @@ namespace SC.UI.Web.MVC.Controllers
             if (ModelState.IsValid)
             {
                 mgr.ChangeTicket(ticket);
+
                 return RedirectToAction("Index");
             }
-
-            return View();
+            {
+                return View();
+            }
         }
 
         // GET: Ticket/Delete/5
@@ -82,7 +85,6 @@ namespace SC.UI.Web.MVC.Controllers
             try
             {
                 mgr.RemoveTicket(id);
-
                 return RedirectToAction("Index");
             }
             catch
@@ -92,3 +94,7 @@ namespace SC.UI.Web.MVC.Controllers
         }
     }
 }
+
+
+
+

@@ -1,8 +1,10 @@
 ﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Owin;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using Owin;
-
+using Microsoft.Owin;
+[assembly: OwinStartup(typeof(SC.UI.Web.MVC.Startup))]
 namespace SC.UI.Web.MVC
 {
     public class Startup
@@ -10,7 +12,6 @@ namespace SC.UI.Web.MVC
         public void Configuration(IAppBuilder app)
         {
             app.MapSignalR();
-
         }
     }
 }
