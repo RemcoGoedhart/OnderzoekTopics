@@ -8,6 +8,7 @@ using System.ServiceModel.Web;
 using System.Text;
 using SC.BL;
 using SC.BL.Domain;
+using SC.UI.Web.MVC.Models;
 
 namespace WCF
 {
@@ -17,14 +18,29 @@ namespace WCF
     {
         private ITicketManager mgr = new TicketManager();
 
+        public String AddResponse(NewTicketResponseDTO response)
+        {
+            TicketResponse createdResponse = mgr.AddTicketResponse(response.TicketNumber
+            , response.ResponseText, response.IsClientResponse);
+
+            TicketResponseDTO responseData = new TicketResponseDTO()
+            {
+                Id = createdResponse.Id,
+                Text = createdResponse.Text,
+                Date = createdResponse.Date,
+                IsClientResponse = createdResponse.IsClientResponse
+            };            WebOperationContext ctx = WebOperationContext.Current;
+            
+            return "hallo";
+}
+
         public List<TicketResponse> GetTicketResponse(int ticketNumber)
         {
+            
             var responses = mgr.GetTicketResponses(ticketNumber);
-            Debug.WriteLine("HALLO");
-            Debug.WriteLine(responses.ToList()[0].Text);
-            Debug.WriteLine("HALLO");
-
-
+            WebOperationContext ctx = WebOperationContext.Current;
+            Debug.WriteLine("CODE");
+            Debug.WriteLine(ctx.OutgoingResponse.StatusCode);
             return (responses.ToList());
         }
     }

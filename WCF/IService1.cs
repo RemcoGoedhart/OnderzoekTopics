@@ -1,4 +1,5 @@
 ﻿using SC.BL.Domain;
+using SC.UI.Web.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace WCF
     {
         [OperationContract]
         List<TicketResponse> GetTicketResponse(int ticketNumber);
+        String AddResponse(NewTicketResponseDTO response);
     }
 
 }
