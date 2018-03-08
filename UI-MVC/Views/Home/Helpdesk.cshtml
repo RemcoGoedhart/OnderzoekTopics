@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Helpdesk";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<br />
+<br />
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Live Chat</h2>
+        <p>Maak contact met een van onze support team leden.</p>
+        <p><a class="btn btn-default" href="@Url.Action("Chat", "Home")">Start Live Chat</a></p>
+    </div>
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <h2>Zoeken</h2>
+        <p>Ga op zoek naar een vaak gestelde vraag.</p>
+        <p><a class="btn btn-default" href="#" onclick="vis('text');">FAQ</a></p>
+        <ul id="text" style="display:none">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <script type="text/javascript">
+            function vis(id) {
+                var e = document.getElementById(id);
+                if (e.style.display == 'block')
+                    e.style.display = 'none';
+                else
+                    e.style.display = 'block';
+            }
+        </script>
+    </div>
+</div>

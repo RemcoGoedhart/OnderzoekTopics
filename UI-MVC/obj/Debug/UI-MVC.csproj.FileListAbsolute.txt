@@ -209,7 +209,6 @@ C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\UI-MVC\bin\Microsoft.Web.Infrastr
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\UI-MVC\bin\Newtonsoft.Json.dll
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\UI-MVC\bin\Owin.dll
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\UI-MVC\bin\SC.BL.dll
-C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\UI-MVC\bin\SC.BL.Domain.dll
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\UI-MVC\bin\System.Web.Helpers.dll
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\UI-MVC\bin\System.Web.Mvc.dll
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\UI-MVC\bin\System.Web.Optimization.dll
