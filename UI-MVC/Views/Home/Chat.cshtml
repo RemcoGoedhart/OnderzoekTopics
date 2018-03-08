@@ -6,27 +6,36 @@
     <input type="text" id="message" />
     <input type="button" id="sendmessage" value="Send" />
     <input type="hidden" id="displayname" />
+    <input type="hidden" id="passwd" />
+</div>
+<div class="tekstcontainer" id="out" style="overflow-x: hidden;overflow: scroll;">
     <ul id="discussion"></ul>
 </div>
+<script>var out = document.getElementById("out");
+    // allow 1px inaccuracy by adding 1
+    var isScrolledToBottom = out.scrollHeight - out.clientHeight <= out.scrollTop + 1;
+
+    if (isScrolledToBottom)
+        out.scrollTop = out.scrollHeight - out.clientHeight;</script>
 @section scripts {
     <script src="~/Scripts/jquery.signalR-2.1.2.min.js"></script>
     <script src="~/signalr/hubs"></script>
     <!--referencies naar scripts-->
     <script>
+        
         $(function () {
             var chat = $.connection.chatHub;
             // functie die de hub aanroept die gaat broadcasten
             chat.client.addNewMessageToPage = function (name, message) {
-                $('#discussion').append('<li><strong>' + htmlEncode(name)
-                    + '</strong>: ' + htmlEncode(message) + '</li>');
+            $('#discussion').append('<li> <strong>' + htmlEncode(name) + '</strong>: ' + htmlEncode(message) +  '</li>');
             };
             // Gebruiker om zijn naam vragen
-            $('#displayname').val(prompt('Enter your name:', ''));
+            $('#displayname').val(prompt('Geef je naam:', ''));
             $('#message').focus();
             $.connection.hub.start().done(function () {
                 $('#sendmessage').click(function () {
                     // roep de methode 'Send' in the ChatHub
-                    chat.server.send($('#displayname').val(), $('#message').val());
+                    chat.server.send($('#displayname').val(), $('#message').val(), $('#passwd').val());
                     //maak de box leeg en reset de focus
                     $('#message').val('').focus();
                 });
