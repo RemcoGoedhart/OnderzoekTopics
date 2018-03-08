@@ -7,22 +7,22 @@
       <xsd:import schemaLocation="http://localhost:50176/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SC.BL.Domain" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IService1_getTicketResponses_InputMessage">
-    <wsdl:part name="parameters" element="tns:getTicketResponses" />
+  <wsdl:message name="IService1_GetTicketResponse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTicketResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_getTicketResponses_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getTicketResponsesResponse" />
+  <wsdl:message name="IService1_GetTicketResponse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTicketResponseResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
-    <wsdl:operation name="getTicketResponses">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getTicketResponses" message="tns:IService1_getTicketResponses_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getTicketResponsesResponse" message="tns:IService1_getTicketResponses_OutputMessage" />
+    <wsdl:operation name="GetTicketResponse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTicketResponse" message="tns:IService1_GetTicketResponse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTicketResponseResponse" message="tns:IService1_GetTicketResponse_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="getTicketResponses">
-      <soap:operation soapAction="http://tempuri.org/IService1/getTicketResponses" style="document" />
+    <wsdl:operation name="GetTicketResponse">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTicketResponse" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

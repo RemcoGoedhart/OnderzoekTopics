@@ -16,7 +16,7 @@ namespace WCF
     {
         private ITicketManager mgr = new TicketManager();
 
-        public List<TicketResponse> GetTicketResponses(int ticketNumber)
+        public List<TicketResponse> GetTicketResponse(int ticketNumber)
         {
             var responses = mgr.GetTicketResponses(ticketNumber);
             

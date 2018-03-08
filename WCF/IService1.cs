@@ -14,7 +14,7 @@ namespace WCF
     public interface IService1
     {
         [OperationContract]
-        List<TicketResponse> GetTicketResponses(int ticketNumber);
+        List<TicketResponse> GetTicketResponse(int ticketNumber);
     }
 
 }

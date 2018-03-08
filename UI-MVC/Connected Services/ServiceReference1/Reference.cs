@@ -15,11 +15,11 @@ namespace SC.UI.Web.MVC.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
     public interface IService1 {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getTicketResponses", ReplyAction="http://tempuri.org/IService1/getTicketResponsesResponse")]
-        SC.BL.Domain.TicketResponse[] getTicketResponses(int ticketNumber);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetTicketResponse", ReplyAction="http://tempuri.org/IService1/GetTicketResponseResponse")]
+        SC.BL.Domain.TicketResponse[] GetTicketResponse(int ticketNumber);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getTicketResponses", ReplyAction="http://tempuri.org/IService1/getTicketResponsesResponse")]
-        System.Threading.Tasks.Task<SC.BL.Domain.TicketResponse[]> getTicketResponsesAsync(int ticketNumber);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetTicketResponse", ReplyAction="http://tempuri.org/IService1/GetTicketResponseResponse")]
+        System.Threading.Tasks.Task<SC.BL.Domain.TicketResponse[]> GetTicketResponseAsync(int ticketNumber);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -49,12 +49,12 @@ namespace SC.UI.Web.MVC.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public SC.BL.Domain.TicketResponse[] getTicketResponses(int ticketNumber) {
-            return base.Channel.getTicketResponses(ticketNumber);
+        public SC.BL.Domain.TicketResponse[] GetTicketResponse(int ticketNumber) {
+            return base.Channel.GetTicketResponse(ticketNumber);
         }
         
-        public System.Threading.Tasks.Task<SC.BL.Domain.TicketResponse[]> getTicketResponsesAsync(int ticketNumber) {
-            return base.Channel.getTicketResponsesAsync(ticketNumber);
+        public System.Threading.Tasks.Task<SC.BL.Domain.TicketResponse[]> GetTicketResponseAsync(int ticketNumber) {
+            return base.Channel.GetTicketResponseAsync(ticketNumber);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace SC.UI.Web.MVC.Controllers
         public ActionResult Get(int ticketNumber)
         {
             ServiceReference1.Service1Client ServiceRef = new ServiceReference1.Service1Client();
-            return View(ServiceRef.getTicketResponses(ticketNumber));
+            return View(ServiceRef.GetTicketResponse(ticketNumber));
         }
     }
 }
