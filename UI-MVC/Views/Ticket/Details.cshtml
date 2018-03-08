@@ -77,6 +77,7 @@
     </table>
 </div>
 
+
 @section scripts {
     <script type="text/javascript">
         // Toon responses
@@ -85,7 +86,7 @@
                 type: 'GET',
                 dataType: 'json' // data-type expected back (response-data parsed to object)
             })
-                .done(function () { alert('Oeps, something went wrong!');  })
+                .done(function (data) { showTicketResponses(data); })
                 .fail(function () { alert('Oeps, something went wrong!'); });
         }
         function showTicketResponses(responses) {

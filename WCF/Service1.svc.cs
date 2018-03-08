@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -19,8 +20,12 @@ namespace WCF
         public List<TicketResponse> GetTicketResponse(int ticketNumber)
         {
             var responses = mgr.GetTicketResponses(ticketNumber);
-            
-            return (responses.ToList<TicketResponse>());
+            Debug.WriteLine("HALLO");
+            Debug.WriteLine(responses.ToList()[0].Text);
+            Debug.WriteLine("HALLO");
+
+
+            return (responses.ToList());
         }
     }
 }
