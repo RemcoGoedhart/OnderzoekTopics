@@ -272,7 +272,6 @@ C:\Users\Remco\Source\Repos\OnderzoekTopics\UI-MVC\bin\Microsoft.Web.Infrastruct
 C:\Users\Remco\Source\Repos\OnderzoekTopics\UI-MVC\bin\Newtonsoft.Json.dll
 C:\Users\Remco\Source\Repos\OnderzoekTopics\UI-MVC\bin\Owin.dll
 C:\Users\Remco\Source\Repos\OnderzoekTopics\UI-MVC\bin\SC.BL.dll
-C:\Users\Remco\Source\Repos\OnderzoekTopics\UI-MVC\bin\SC.BL.Domain.dll
 C:\Users\Remco\Source\Repos\OnderzoekTopics\UI-MVC\bin\System.Web.Helpers.dll
 C:\Users\Remco\Source\Repos\OnderzoekTopics\UI-MVC\bin\System.Web.Mvc.dll
 C:\Users\Remco\Source\Repos\OnderzoekTopics\UI-MVC\bin\System.Web.Optimization.dll

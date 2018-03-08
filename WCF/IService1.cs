@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SC.BL.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -12,37 +13,8 @@ namespace WCF
     [ServiceContract]
     public interface IService1
     {
-
         [OperationContract]
-        string GetData(int value);
-        string GetReport(int value);
-
-        [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
-
-        // TODO: Add your service operations here
+        List<TicketResponse> GetTicketResponses(int ticketNumber);
     }
 
-
-    // Use a data contract as illustrated in the sample below to add composite types to service operations.
-    [DataContract]
-    public class CompositeType
-    {
-        bool boolValue = true;
-        string stringValue = "Hello ";
-
-        [DataMember]
-        public bool BoolValue
-        {
-            get { return boolValue; }
-            set { boolValue = value; }
-        }
-
-        [DataMember]
-        public string StringValue
-        {
-            get { return stringValue; }
-            set { stringValue = value; }
-        }
-    }
 }

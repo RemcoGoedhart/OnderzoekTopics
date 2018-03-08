@@ -5,6 +5,8 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using SC.BL;
+using SC.BL.Domain;
 
 namespace WCF
 {
@@ -12,27 +14,13 @@ namespace WCF
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public string GetData(int value)
-        {
-            return string.Format("You entered: {0}", value);
-        }
+        private ITicketManager mgr = new TicketManager();
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public List<TicketResponse> GetTicketResponses(int ticketNumber)
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
-        }
-
-        public string GetReport(int value)
-        {
-            throw new NotImplementedException();
+            var responses = mgr.GetTicketResponses(ticketNumber);
+            
+            return (responses.ToList<TicketResponse>());
         }
     }
 }
