@@ -59,7 +59,7 @@
 <h4>Responses</h4>
 @*@Html.Partial("_TicketResponsesPartial", Model.Responses)*@
 @* /* OF: via ViewBag */ *@
-@Html.Partial("_TicketResponsesPartial", (IEnumerable<SC.BL.Domain.TicketResponse>)ViewBag.Responses)
+@*@Html.Partial("_TicketResponsesPartial", (IEnumerable<SC.BL.Domain.TicketResponse>)ViewBag.Responses)*@
 @* /* OF: via AJAX-call */ *@
 <p>
     <button class="btn btn-default" onclick="loadResponsesOfTicket(@Model.TicketNumber)">
@@ -81,7 +81,7 @@
     <script type="text/javascript">
         // Toon responses
         function loadResponsesOfTicket(ticketNumber) {
-            $.ajax('/api/TicketResponse?ticketnumber=' + ticketNumber, {
+            $.ajax('/TicketResponse?ticketnumber=' + ticketNumber, {
                 type: 'GET',
                 dataType: 'json' // data-type expected back (response-data parsed to object)
             })
