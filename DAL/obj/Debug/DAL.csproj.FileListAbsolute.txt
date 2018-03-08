@@ -22,3 +22,15 @@ C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\DAL\obj\Debug\DAL.csprojResolveAs
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\DAL\obj\Debug\SC.DAL.dll
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\DAL\obj\Debug\SC.DAL.pdb
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\bin\Debug\SC.DAL.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\bin\Debug\SC.DAL.pdb
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\bin\Debug\SC.BL.Domain.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\bin\Debug\SC.BL.Domain.pdb
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\obj\Debug\SC.DAL.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\obj\Debug\SC.DAL.pdb

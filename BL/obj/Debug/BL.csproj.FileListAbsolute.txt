@@ -26,3 +26,17 @@ C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\BL\obj\Debug\BL.csprojResolveAsse
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\BL\obj\Debug\SC.BL.dll
 C:\Users\Maxim\Onderzoektopics\OnderzoekTopics\BL\obj\Debug\SC.BL.pdb
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\SC.BL.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\SC.BL.pdb
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\SC.BL.Domain.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\SC.DAL.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\EntityFramework.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\SC.DAL.pdb
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\SC.BL.Domain.pdb
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\EntityFramework.xml
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\obj\Debug\SC.BL.dll
+C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\obj\Debug\SC.BL.pdb
