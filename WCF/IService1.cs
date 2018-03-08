@@ -15,6 +15,7 @@ namespace WCF
 
         [OperationContract]
         string GetData(int value);
+        string GetReport(int value);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);

@@ -29,5 +29,10 @@ namespace WCF
             }
             return composite;
         }
+
+        public string GetReport(int value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
