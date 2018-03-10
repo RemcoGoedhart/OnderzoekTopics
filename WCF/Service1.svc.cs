@@ -18,20 +18,20 @@ namespace WCF
     {
         private ITicketManager mgr = new TicketManager();
 
-        public String AddResponse(NewTicketResponseDTO response)
+        public TicketResponse AddResponse(NewTicketResponseDTO response)
         {
             TicketResponse createdResponse = mgr.AddTicketResponse(response.TicketNumber
             , response.ResponseText, response.IsClientResponse);
 
-            TicketResponseDTO responseData = new TicketResponseDTO()
+            TicketResponse responseData = new TicketResponse()
             {
                 Id = createdResponse.Id,
                 Text = createdResponse.Text,
                 Date = createdResponse.Date,
                 IsClientResponse = createdResponse.IsClientResponse
             };            WebOperationContext ctx = WebOperationContext.Current;
-            
-            return "http://localhost:50086/TicketResponse/Post?TicketNumber=" + createdResponse.Id + "&responsetext=" + createdResponse.Text + "&isclientresponse=false";
+
+            return responseData;
         }
 
         public List<TicketResponse> GetTicketResponse(int ticketNumber)

@@ -32,7 +32,7 @@ namespace SC.UI.Web.MVC.Controllers
             string json = Encoding.Default.GetString(memoryStream.ToArray());
             Debug.WriteLine(json[0]);
             return json;
-        }                public String Post(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response)
+        }                public TicketResponse Post(ServiceReference1.NewTicketResponseDTO response)
         {
             return ServiceRef.AddResponse(response);
         }        

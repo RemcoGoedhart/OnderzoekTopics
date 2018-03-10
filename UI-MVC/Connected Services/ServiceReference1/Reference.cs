@@ -101,10 +101,10 @@ namespace SC.UI.Web.MVC.ServiceReference1 {
         System.Threading.Tasks.Task<SC.BL.Domain.TicketResponse[]> GetTicketResponseAsync(int ticketNumber);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddResponse", ReplyAction="http://tempuri.org/IService1/AddResponseResponse")]
-        string AddResponse(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response);
+        SC.BL.Domain.TicketResponse AddResponse(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddResponse", ReplyAction="http://tempuri.org/IService1/AddResponseResponse")]
-        System.Threading.Tasks.Task<string> AddResponseAsync(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response);
+        System.Threading.Tasks.Task<SC.BL.Domain.TicketResponse> AddResponseAsync(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -142,11 +142,11 @@ namespace SC.UI.Web.MVC.ServiceReference1 {
             return base.Channel.GetTicketResponseAsync(ticketNumber);
         }
         
-        public string AddResponse(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response) {
+        public SC.BL.Domain.TicketResponse AddResponse(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response) {
             return base.Channel.AddResponse(response);
         }
         
-        public System.Threading.Tasks.Task<string> AddResponseAsync(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response) {
+        public System.Threading.Tasks.Task<SC.BL.Domain.TicketResponse> AddResponseAsync(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response) {
             return base.Channel.AddResponseAsync(response);
         }
     }
