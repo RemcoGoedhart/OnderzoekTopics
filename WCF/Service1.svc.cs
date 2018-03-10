@@ -31,8 +31,8 @@ namespace WCF
                 IsClientResponse = createdResponse.IsClientResponse
             };            WebOperationContext ctx = WebOperationContext.Current;
             
-            return "hallo";
-}
+            return "http://localhost:50086/TicketResponse/Post?TicketNumber=" + createdResponse.Id + "&responsetext=" + createdResponse.Text + "&isclientresponse=false";
+        }
 
         public List<TicketResponse> GetTicketResponse(int ticketNumber)
         {

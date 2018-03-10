@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="http://localhost:50176/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:50176/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:50176/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SC.BL.Domain" />
+      <xsd:import schemaLocation="http://localhost:50176/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SC.UI.Web.MVC.Models" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IService1_GetTicketResponse_InputMessage">
@@ -13,16 +14,35 @@
   <wsdl:message name="IService1_GetTicketResponse_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetTicketResponseResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_AddResponse_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddResponse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddResponseResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetTicketResponse">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTicketResponse" message="tns:IService1_GetTicketResponse_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTicketResponseResponse" message="tns:IService1_GetTicketResponse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddResponse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddResponse" message="tns:IService1_AddResponse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddResponseResponse" message="tns:IService1_AddResponse_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetTicketResponse">
       <soap:operation soapAction="http://tempuri.org/IService1/GetTicketResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddResponse">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddResponse" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
