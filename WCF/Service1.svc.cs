@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
@@ -18,10 +20,19 @@ namespace WCF
     {
         private ITicketManager mgr = new TicketManager();
 
-        public TicketResponse AddResponse(NewTicketResponseDTO response)
+        public String AddResponse(NewTicketResponseDTO response)
         {
             TicketResponse createdResponse = mgr.AddTicketResponse(response.TicketNumber
             , response.ResponseText, response.IsClientResponse);
+
+            if (createdResponse == null)
+            {
+                WebOperationContext bad = WebOperationContext.Current;
+                bad.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.BadRequest;
+                bad.OutgoingResponse.StatusDescription = "Er is iets misgelopen bij het registreren van het antwoord!";
+                Debug.WriteLine(bad.OutgoingResponse.StatusCode);
+                Debug.WriteLine(bad.OutgoingResponse.StatusDescription);
+            }
 
             TicketResponse responseData = new TicketResponse()
             {
@@ -30,8 +41,12 @@ namespace WCF
                 Date = createdResponse.Date,
                 IsClientResponse = createdResponse.IsClientResponse
             };            WebOperationContext ctx = WebOperationContext.Current;
+            DataContractJsonSerializer serializer = new DataContractJsonSerializer(responseData.GetType());
+            MemoryStream memoryStream = new MemoryStream();
+            serializer.WriteObject(memoryStream, responseData);
+            string json = Encoding.Default.GetString(memoryStream.ToArray());
 
-            return responseData;
+            return json;
         }
 
         public List<TicketResponse> GetTicketResponse(int ticketNumber)

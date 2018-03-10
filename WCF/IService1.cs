@@ -17,7 +17,7 @@ namespace WCF
         [OperationContract]
         List<TicketResponse> GetTicketResponse(int ticketNumber);
         [OperationContract]
-        TicketResponse AddResponse(NewTicketResponseDTO response);
+        String AddResponse(NewTicketResponseDTO response);
     }
 
 }

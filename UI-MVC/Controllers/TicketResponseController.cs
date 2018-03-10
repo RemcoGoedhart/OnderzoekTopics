@@ -30,9 +30,8 @@ namespace SC.UI.Web.MVC.Controllers
             MemoryStream memoryStream = new MemoryStream();
             serializer.WriteObject(memoryStream, lijst);
             string json = Encoding.Default.GetString(memoryStream.ToArray());
-            Debug.WriteLine(json[0]);
             return json;
-        }                public TicketResponse Post(ServiceReference1.NewTicketResponseDTO response)
+        }                public String Post(ServiceReference1.NewTicketResponseDTO response)
         {
             return ServiceRef.AddResponse(response);
         }        

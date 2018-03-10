@@ -26,7 +26,7 @@
   <xs:element name="AddResponseResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SC.BL.Domain" minOccurs="0" name="AddResponseResult" nillable="true" type="q3:TicketResponse" />
+        <xs:element minOccurs="0" name="AddResponseResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
