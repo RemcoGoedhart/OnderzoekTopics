@@ -17,9 +17,13 @@ namespace WCF
         [OperationContract]
         List<TicketResponse> GetTicketResponse(int ticketNumber);
         [OperationContract]
+<<<<<<< HEAD
         TicketResponse AddResponse(NewTicketResponseDTO response);
         [OperationContract]
         void CloseTicket(int id);
+=======
+        String AddResponse(NewTicketResponseDTO response);
+>>>>>>> parent of 7303b55... Werkend
     }
 
 }

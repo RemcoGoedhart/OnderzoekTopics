@@ -20,9 +20,8 @@ namespace SC.UI.Web.MVC.Controllers
         public String Get(int ticketNumber)
         {
 
-             List<TicketResponse> lijst = ServiceRef.GetTicketResponse(ticketNumber).ToList<TicketResponse>();
-              
-            /*voor de datum aan te passen for (int i = 0; i < lijst.Count; i++)
+            List<TicketResponse> lijst = ServiceRef.GetTicketResponse(ticketNumber).ToList<TicketResponse>();
+            /* voor de datum aan te passen for (int i = 0; i < lijst.Count; i++)
             {
                 lijst[i].Date = lijst[i].Date;
             }
@@ -31,12 +30,10 @@ namespace SC.UI.Web.MVC.Controllers
             MemoryStream memoryStream = new MemoryStream();
             serializer.WriteObject(memoryStream, lijst);
             string json = Encoding.Default.GetString(memoryStream.ToArray());
-
-            /* return Json(ServiceRef.GetTicketResponse(ticketNumber).ToList<TicketResponse>()); */
             return json;
-        }                public JsonResult Post(ServiceReference1.NewTicketResponseDTO response)
+        }                public String Post(ServiceReference1.NewTicketResponseDTO response)
         {
-            return Json(ServiceRef.AddResponse(response));
+            return ServiceRef.AddResponse(response);
         }        
     }
 }
