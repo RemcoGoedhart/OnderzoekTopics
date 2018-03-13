@@ -131,7 +131,7 @@
             }
         }
         function closeTicket(ticketNumber) {
-            $.ajax('/Ticket/PutTicketStateClosed' + ticketNumber + '/State/Closed', {
+            $.ajax('/Ticket/' + ticketNumber + '/State/Closed', {
                 type: 'PUT'
             })
                 .done(function (data) { $('#state').html('Closed'); })

@@ -46,10 +46,5 @@ namespace WCF
             Debug.WriteLine(ctx.OutgoingResponse.StatusCode);
             return (responses.ToList());
         }
-        public void CloseTicket(int id)
-        {
-            mgr.ChangeTicketStateToClosed(id);
-            
-        }
     }
 }
