@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Web;
@@ -37,6 +38,12 @@ namespace SC.UI.Web.MVC.Controllers
         }                public JsonResult Post(ServiceReference1.NewTicketResponseDTO response)
         {
             return Json(ServiceRef.AddResponse(response));
-        }        
+        }
+
+        public HttpStatusCode Put(int id)
+        {
+            ServiceRef.TicketClosed(id);
+            return HttpStatusCode.NoContent;
+        }
     }
 }

@@ -18,6 +18,8 @@ namespace WCF
         List<TicketResponse> GetTicketResponse(int ticketNumber);
         [OperationContract]
         TicketResponse AddResponse(NewTicketResponseDTO response);
+        [OperationContract]
+        void TicketClosed(int id);
     }
 
 }

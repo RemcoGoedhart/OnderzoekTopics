@@ -105,6 +105,12 @@ namespace SC.UI.Web.MVC.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddResponse", ReplyAction="http://tempuri.org/IService1/AddResponseResponse")]
         System.Threading.Tasks.Task<SC.BL.Domain.TicketResponse> AddResponseAsync(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TicketClosed", ReplyAction="http://tempuri.org/IService1/TicketClosedResponse")]
+        void TicketClosed(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TicketClosed", ReplyAction="http://tempuri.org/IService1/TicketClosedResponse")]
+        System.Threading.Tasks.Task TicketClosedAsync(int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -148,6 +154,14 @@ namespace SC.UI.Web.MVC.ServiceReference1 {
         
         public System.Threading.Tasks.Task<SC.BL.Domain.TicketResponse> AddResponseAsync(SC.UI.Web.MVC.ServiceReference1.NewTicketResponseDTO response) {
             return base.Channel.AddResponseAsync(response);
+        }
+        
+        public void TicketClosed(int id) {
+            base.Channel.TicketClosed(id);
+        }
+        
+        public System.Threading.Tasks.Task TicketClosedAsync(int id) {
+            return base.Channel.TicketClosedAsync(id);
         }
     }
 }

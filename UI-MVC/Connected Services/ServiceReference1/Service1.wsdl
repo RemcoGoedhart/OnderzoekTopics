@@ -20,6 +20,12 @@
   <wsdl:message name="IService1_AddResponse_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddResponseResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_TicketClosed_InputMessage">
+    <wsdl:part name="parameters" element="tns:TicketClosed" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TicketClosed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TicketClosedResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetTicketResponse">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTicketResponse" message="tns:IService1_GetTicketResponse_InputMessage" />
@@ -28,6 +34,10 @@
     <wsdl:operation name="AddResponse">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddResponse" message="tns:IService1_AddResponse_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddResponseResponse" message="tns:IService1_AddResponse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TicketClosed">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TicketClosed" message="tns:IService1_TicketClosed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TicketClosedResponse" message="tns:IService1_TicketClosed_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -43,6 +53,15 @@
     </wsdl:operation>
     <wsdl:operation name="AddResponse">
       <soap:operation soapAction="http://tempuri.org/IService1/AddResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TicketClosed">
+      <soap:operation soapAction="http://tempuri.org/IService1/TicketClosed" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
