@@ -20,19 +20,10 @@ namespace WCF
     {
         private ITicketManager mgr = new TicketManager();
 
-        public String AddResponse(NewTicketResponseDTO response)
+        public TicketResponse AddResponse(NewTicketResponseDTO response)
         {
             TicketResponse createdResponse = mgr.AddTicketResponse(response.TicketNumber
             , response.ResponseText, response.IsClientResponse);
-
-            if (createdResponse == null)
-            {
-                WebOperationContext bad = WebOperationContext.Current;
-                bad.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.BadRequest;
-                bad.OutgoingResponse.StatusDescription = "Er is iets misgelopen bij het registreren van het antwoord!";
-                Debug.WriteLine(bad.OutgoingResponse.StatusCode);
-                Debug.WriteLine(bad.OutgoingResponse.StatusDescription);
-            }
 
             TicketResponse responseData = new TicketResponse()
             {
@@ -40,13 +31,10 @@ namespace WCF
                 Text = createdResponse.Text,
                 Date = createdResponse.Date,
                 IsClientResponse = createdResponse.IsClientResponse
-            };            WebOperationContext ctx = WebOperationContext.Current;
-            DataContractJsonSerializer serializer = new DataContractJsonSerializer(responseData.GetType());
-            MemoryStream memoryStream = new MemoryStream();
-            serializer.WriteObject(memoryStream, responseData);
-            string json = Encoding.Default.GetString(memoryStream.ToArray());
+            };
+            WebOperationContext ctx = WebOperationContext.Current;
 
-            return json;
+            return responseData;
         }
 
         public List<TicketResponse> GetTicketResponse(int ticketNumber)
