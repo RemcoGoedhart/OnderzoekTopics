@@ -94,6 +94,13 @@ namespace SC.UI.Web.MVC.Controllers
                 return View();
             }
         }
+
+        [Route("Ticket/Put/{id}")]
+        public HttpStatusCode Put(int id)
+        {
+            ServiceRef.TicketClosed(id);
+            return HttpStatusCode.NoContent;
+        }
     }
 }
 

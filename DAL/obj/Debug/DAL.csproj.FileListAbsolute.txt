@@ -34,3 +34,15 @@ C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\obj\Debug\DAL.csprojResolveAssem
 C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\obj\Debug\SC.DAL.dll
 C:\Users\Remco\Source\Repos\OnderzoekTopics\DAL\obj\Debug\SC.DAL.pdb
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\bin\Debug\SC.DAL.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\bin\Debug\SC.DAL.pdb
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\bin\Debug\SC.BL.Domain.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\bin\Debug\SC.BL.Domain.pdb
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\obj\Debug\SC.DAL.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\DAL\obj\Debug\SC.DAL.pdb

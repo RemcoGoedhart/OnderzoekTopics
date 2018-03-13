@@ -38,12 +38,6 @@ namespace SC.UI.Web.MVC.Controllers
         }                public JsonResult Post(ServiceReference1.NewTicketResponseDTO response)
         {
             return Json(ServiceRef.AddResponse(response));
-        }
-
-        public HttpStatusCode Put(int id)
-        {
-            ServiceRef.TicketClosed(id);
-            return HttpStatusCode.NoContent;
         }
     }
 }

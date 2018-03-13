@@ -49,10 +49,12 @@
         <dd>
             <span id="state">@Html.DisplayFor(model => model.State)</span>
             @if (Model.State != SC.BL.Domain.TicketState.Closed)
-             {  
+            {
                 <button type="button" class="btn btn-default btn-xs"
-                    onclick="closeTicket(@Model.TicketNumber)"> Close</button>
-             }
+                        onclick="closeTicket(@Model.TicketNumber)">
+                    Close
+                </button>
+            }
         </dd>
 
 
@@ -98,10 +100,12 @@
                 .done(function (data) { showTicketResponses(data); })
                 .fail(function () { alert('Oeps, something went wrong!'); });
         }
+
         function showTicketResponses(responses) {
             $.each(responses, function (index, value) { addResponseToList(value); });
             $("#addNewResponse").show();
         }
+
         function addResponseToList(response) {
             var date = new Date(response.Date);
             var checked = response.IsClientResponse ? 'checked="checked"' : '';
@@ -112,6 +116,7 @@
                 + checked + ' /></td>'
                 + '</tr>');
         }
+
         // Voeg niew response toe
         function postResponse() {
         var ticketNumber = '@Model.TicketNumber';
@@ -130,9 +135,10 @@
             .fail(function () { alert('Oeps, something went wrong!'); });
             }
         }
+
         function closeTicket(ticketNumber) {
-            $.ajax('/TicketResponse/Put?id=' + ticketNumber, {
-                type: 'PUT'
+            $.ajax('/Ticket/Put?id=' + ticketNumber, {
+                type: 'GET'
             })
                 .done(function (data) { $('#state').html('Closed'); })
                 .fail(function () { alert('Oeps, something went wrong!'); });

@@ -40,3 +40,17 @@ C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\obj\Debug\BL.csprojResolveAssembl
 C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
 C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\obj\Debug\SC.BL.dll
 C:\Users\Remco\Source\Repos\OnderzoekTopics\BL\obj\Debug\SC.BL.pdb
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\SC.BL.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\SC.BL.pdb
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\SC.BL.Domain.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\SC.DAL.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\EntityFramework.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\SC.DAL.pdb
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\SC.BL.Domain.pdb
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\EntityFramework.xml
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\obj\Debug\SC.BL.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\BL\obj\Debug\SC.BL.pdb
