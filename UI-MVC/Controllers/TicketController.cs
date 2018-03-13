@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using SC.BL;
@@ -11,6 +12,7 @@ namespace SC.UI.Web.MVC.Controllers
 {
     public class TicketController : Controller
     {
+        ServiceReference1.Service1Client ServiceRef = new ServiceReference1.Service1Client();
         private ITicketManager mgr = new TicketManager();
 
         // GET: Ticket
@@ -93,6 +95,11 @@ namespace SC.UI.Web.MVC.Controllers
             }
         }
 
+        public HttpStatusCode PutTicketStateClosed(int id)
+        {
+            ServiceRef.CloseTicket(id);
+            return HttpStatusCode.NoContent;
+        }
         
     }
 }
