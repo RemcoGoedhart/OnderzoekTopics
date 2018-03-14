@@ -18,6 +18,7 @@ namespace WCF
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, UriTemplate = "GetTicketResponse?ticketNumber={ticketNumber}")]
         List<TicketResponse> GetTicketResponse(int ticketNumber);
         [OperationContract]
+        [WebInvoke(Method = "POST", RequestFormat =WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, UriTemplate = "AddResponse")]
         TicketResponse AddResponse(NewTicketResponseDTO response);
         [OperationContract]
         void TicketClosed(int id);
