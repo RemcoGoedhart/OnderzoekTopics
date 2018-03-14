@@ -107,7 +107,7 @@
         }
 
         function addResponseToList(response) {
-            var date = new Date(response.Date);
+            var date = new Date(parseInt(response.Date.substr(10)));
             var checked = response.IsClientResponse ? 'checked="checked"' : '';
             $('table#responses').append('<tr>'
                 + '<td>' + response.Text + '</td>'
