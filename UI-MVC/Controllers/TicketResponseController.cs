@@ -18,24 +18,23 @@ namespace SC.UI.Web.MVC.Controllers
         // GET: TicketResponse
 
         ServiceReference1.Service1Client ServiceRef = new ServiceReference1.Service1Client();
-        public String Get(int ticketNumber)
+        public string Get(int ticketNumber)
         {
+            WebRequest request = WebRequest.Create("http://localhost:50176/Service1.svc/GetTicketResponse?ticketNumber=" + ticketNumber);
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            Stream dataStream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(dataStream);
+            string responseFromServer = reader.ReadToEnd();
+            return responseFromServer;
 
-             List<TicketResponse> lijst = ServiceRef.GetTicketResponse(ticketNumber).ToList<TicketResponse>();
-              
             /*voor de datum aan te passen for (int i = 0; i < lijst.Count; i++)
             {
                 lijst[i].Date = lijst[i].Date;
             }
             */
-            DataContractJsonSerializer serializer = new DataContractJsonSerializer(lijst.GetType());
-            MemoryStream memoryStream = new MemoryStream();
-            serializer.WriteObject(memoryStream, lijst);
-            string json = Encoding.Default.GetString(memoryStream.ToArray());
+        }
 
-            /* return Json(ServiceRef.GetTicketResponse(ticketNumber).ToList<TicketResponse>()); */
-            return json;
-        }                public JsonResult Post(ServiceReference1.NewTicketResponseDTO response)
+        public JsonResult Post(ServiceReference1.NewTicketResponseDTO response)
         {
             return Json(ServiceRef.AddResponse(response));
         }

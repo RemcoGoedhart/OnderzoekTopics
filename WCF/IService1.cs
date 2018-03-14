@@ -15,6 +15,7 @@ namespace WCF
     public interface IService1
     {
         [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, UriTemplate = "GetTicketResponse?ticketNumber={ticketNumber}")]
         List<TicketResponse> GetTicketResponse(int ticketNumber);
         [OperationContract]
         TicketResponse AddResponse(NewTicketResponseDTO response);

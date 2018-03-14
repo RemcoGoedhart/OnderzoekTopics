@@ -20,6 +20,13 @@ namespace WCF
     {
         private ITicketManager mgr = new TicketManager();
 
+        public List<TicketResponse> GetTicketResponse(int ticketNumber)
+        {
+
+            var responses = mgr.GetTicketResponses(ticketNumber);
+            return (responses.ToList());
+        }
+
         public TicketResponse AddResponse(NewTicketResponseDTO response)
         {
             TicketResponse createdResponse = mgr.AddTicketResponse(response.TicketNumber
@@ -35,16 +42,6 @@ namespace WCF
             WebOperationContext ctx = WebOperationContext.Current;
 
             return responseData;
-        }
-
-        public List<TicketResponse> GetTicketResponse(int ticketNumber)
-        {
-            
-            var responses = mgr.GetTicketResponses(ticketNumber);
-            WebOperationContext ctx = WebOperationContext.Current;
-            Debug.WriteLine("CODE");
-            Debug.WriteLine(ctx.OutgoingResponse.StatusCode);
-            return (responses.ToList());
         }
 
         public void TicketClosed(int id)

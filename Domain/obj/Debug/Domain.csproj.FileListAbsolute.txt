@@ -13,3 +13,9 @@ C:\Users\Remco\Source\Repos\OnderzoekTopics\Domain\bin\Debug\SC.BL.Domain.pdb
 C:\Users\Remco\Source\Repos\OnderzoekTopics\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
 C:\Users\Remco\Source\Repos\OnderzoekTopics\Domain\obj\Debug\SC.BL.Domain.dll
 C:\Users\Remco\Source\Repos\OnderzoekTopics\Domain\obj\Debug\SC.BL.Domain.pdb
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\Domain\bin\Debug\SC.BL.Domain.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\Domain\bin\Debug\SC.BL.Domain.pdb
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\Domain\obj\Debug\SC.BL.Domain.dll
+C:\Users\Arno\Documents\school_jaar2\programmeren2\onderzoektopics\Eg_SupportCenter_git\OnderzoekTopics\Domain\obj\Debug\SC.BL.Domain.pdb
