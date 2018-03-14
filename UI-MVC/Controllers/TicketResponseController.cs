@@ -17,8 +17,8 @@ namespace SC.UI.Web.MVC.Controllers
     public class TicketResponseController : Controller
     {
         // GET: TicketResponse
+        //ServiceReference1.Service1Client ServiceRef = new ServiceReference1.Service1Client();
 
-        ServiceReference1.Service1Client ServiceRef = new ServiceReference1.Service1Client();
         public string Get(int ticketNumber)
         {
             WebRequest request = WebRequest.Create("http://localhost:50176/Service1.svc/GetTicketResponse?ticketNumber=" + ticketNumber);

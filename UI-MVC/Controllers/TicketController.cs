@@ -95,10 +95,12 @@ namespace SC.UI.Web.MVC.Controllers
             }
         }
 
+
         [Route("Ticket/Put/{id}")]
         public HttpStatusCode Put(int id)
         {
-            ServiceRef.TicketClosed(id);
+            WebRequest request = WebRequest.Create("http://localhost:50176/Service1.svc/TicketClosed?id=" + id);
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             return HttpStatusCode.NoContent;
         }
     }
