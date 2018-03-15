@@ -32,6 +32,11 @@ namespace SC.UI.Web.MVC.Controllers
             return View();
         }
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+
         public ActionResult Helpdesk()
         {
             ViewBag.Message = "Have a chat with our support team.";

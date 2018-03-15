@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/Login.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <h1>Live Chat</h1>
+            <br>
+            <form class="login-form">
+                <input id="naam" type="text" placeholder="gebruikersnaam" />
+                <input id="passwd" type="password" placeholder="wachtwoord" />
+                <button onclick="check(this.form)">login</button>
+            </form>
+        </div>
+    </div>
+    <script language="javascript">
+        function check(form){
+            if (form.naam.value == "Administrator" && form.passwd.value == "KDG2018") {
+                alert("Welkom Administrator")
+                window.open('chat')
+            }
+            else {
+                alert("Welkom gebruiker")
+                window.open('chat')
+            }
+        }
+    </script>
+</body>

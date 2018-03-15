@@ -1,0 +1,28 @@
+﻿body {
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+.tekstcontainer {
+    overflow-x: hidden;
+    overflow: auto; 
+    background-color:ghostwhite
+}
+
+.sendmessage {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: dodgerblue;
+    width: 100%;
+    padding: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    color: black;
+    border: 2px solid #555555;
+}
+.textbox {
+    width: 100%;
+    border-style: solid;
+    padding: 15px;
+
+}

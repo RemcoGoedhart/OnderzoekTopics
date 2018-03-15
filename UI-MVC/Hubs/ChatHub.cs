@@ -8,9 +8,9 @@ namespace SC.UI.Web.MVC.Hubs
 {
     public class ChatHub : Hub
     {
-        public void Send(string name, string message, string passwd)
+        public void Send(string name, string message)
         {
-            Clients.All.addNewMessageToPage(name, message, passwd);
+            Clients.All.addNewMessageToPage(name, message);
         }
     }
 }
